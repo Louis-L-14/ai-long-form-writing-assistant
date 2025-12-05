@@ -1,0 +1,244 @@
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.local
+.env.*.local
+*.env
+**/.env
+
+# API Keys and credentials
+**/secrets/
+**/config/local.py
+**/config/development.py
+
+# ========================
+# Python
+# ========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+.conda/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ========================
+# Node.js / Frontend
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+build/
+
+# Logs
+logs/
+*.log
+
+# ========================
+# Database
+# ========================
+# PostgreSQL dumps
+*.sql.gz
+*.dump
+*.backup
+
+# SQLite databases (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Database migrations (keep structure, ignore data)
+**/migrations/versions/*.pyc
+**/alembic/versions/*.pyc
+
+# ========================
+# Docker
+# ========================
+# Docker volumes and local data
+docker-compose.override.yml
+**/postgres_data/
+**/pgadmin_data/
+
+# ========================
+# IDEs and Editors
+# ========================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ========================
+# Operating System
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========================
+# Project Specific
+# ========================
+# Prompts with sensitive content (keep templates, ignore customized)
+# back-end/prompts/**/*_private.txt
+
+# User-uploaded content (if storing locally)
+**/uploads/
+**/user_content/
+
+# Temporary analysis scripts
+**/analyze_*.py
+**/verify_*.py
+**/debug_*.py
+**/temp_*.py
+
+# Large model files (if any)
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+
+# Generated documentation
+docs/_build/
+site/
+
+# MCP server logs
+**/mcp_server/*.log
+
+# Embedding cache
+**/embeddings_cache/
+**/.embedding_cache/
+
+# ========================
+# CI/CD
+# ========================
+.github/workflows/*.local.yml
+.gitlab-ci.local.yml
+
+# ========================
+# Testing artifacts
+# ========================
+.coverage
+htmlcov/
+.pytest_cache/
+test-results/
+coverage/
+
+# ========================
+# Misc
+# ========================
+# Agent state snapshots (large binary)
+**/.agent/
+.agent/
+
+# Backups
+*.bak
+*.backup
+*.old
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
